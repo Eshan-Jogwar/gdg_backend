@@ -1,8 +1,10 @@
 import json
 from headerFetcher import getTopicHeader
+import os
 def getVideoIdRelevant(header):
     videoId = []
-    with open("result.json", "r") as file:
+    path = os.path.abspath(os.path.dirname("result.json")) + "/gdg_backend/result.json"
+    with open(path, "r") as file:
         data = json.load(file)
         header_keys = list(header.keys())
         calculate_max = False

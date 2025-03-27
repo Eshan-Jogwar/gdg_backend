@@ -40,7 +40,7 @@ def save_to_pdf(notes, assignments, tests, filename):
     
     pdf = PDF()
     
-    font_path = "C:\\gdg website\\backend\\ezyZip\\arial-unicode-ms.ttf"  # Ensure this file is in the same directory
+    font_path = "gdg_backend/ezyZip/arial-unicode-ms.ttf"  # Ensure this file is in the same directory
 
     # if not os.path.exists(font_path):
     #     raise FileNotFoundError(f"⚠️ Font file not found: {font_path}. Please add the file!")

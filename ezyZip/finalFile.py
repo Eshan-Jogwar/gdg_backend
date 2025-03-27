@@ -13,7 +13,7 @@ genai.configure(api_key=API_KEY)
 llm = genai.GenerativeModel("gemini-1.5-pro")
 
 # Register Arial Unicode Font
-pdfmetrics.registerFont(TTFont("ArialUnicode", os.path.abspath("ezyZip\\arial-unicode-ms.ttf")))
+pdfmetrics.registerFont(TTFont("ArialUnicode", os.path.abspath("gdg_backend/ezyZip/arial-unicode-ms.ttf")))
 
 # Load Default Styles
 styles = getSampleStyleSheet()

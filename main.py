@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request, send_file
-from flask_cors import CORS, cross_origin
+from flask_cors import CORS, cross_origin # type: ignore
 from resultJsonIterator import getVideoIdRelevant
 from headerFetcher import getTopicHeader
 from ezyZip.finalFile import generate_study_material
